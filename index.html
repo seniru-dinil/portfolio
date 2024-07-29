@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Nav-Bar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="poppins-bold">
+    <header class="header | flex-sb | poppins-bold">
+      <div class="header__logo"><h1>John Doe</h1></div>
+      <nav class="header__navigation">
+        <div class="navBg">
+          <ul class="flex-center">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#">Contanct</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="mobile" id="mobile" onclick="handle()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <nav class="mobile__navigation visually-hidden">
+        <div class="cansel__icon" onclick="canselHandle()">
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <ul class="grid">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contanct</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="about | flex-center" id="About">
+      <div class="about__img">
+        <img class="img" src="/images/profile-pic.png" alt="" />
+      </div>
+      <div class="about__details">
+        <p class="para">Hello,I'm</p>
+        <h2 class="name">John Doe</h2>
+        <h3 class="position">Frontend Developer</h3>
+        <div class="buttons">
+          <button class="download btn">Download CV</button>
+          <button class="contact btn">Contact Info</button>
+        </div>
+        <div class="icons">
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="Experience">
+      <div class="more">More about me</div>
+      <div class="sep">
+        <div class="exp__img">
+          <img class="exp-img" src="/images/about-pic.png" alt="" />
+        </div>
+        <div class="exp__boxs">
+          <div class="bx bx1">
+            <i class="fa-solid fa-users"></i>
+            <h3 class="highlight">Experience</h3>
+            <h5>2 years</h5>
+            <h5>Frontend Development</h5>
+          </div>
+          <div class="bx bx2">
+            <i class="fa-solid fa-building-columns"></i>
+            <h3 class="highlight">Education</h3>
+            <h5>B.Sc.Bachelors Gegree</h5>
+            <h5>M.Sc.Masters Degree</h5>
+          </div>
+          <div class="description">
+            <p class="description-para">
+              <i class="fa-solid fa-star"></i>
+              As a self-taught programmer with 2 years of experience, I possess
+              a diverse skillset, including expertise in React, React Native,
+              Angular, Next.js, Three.js, Node.js, Spring Boot, Java.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="techStack">
+      <div class="techGrid">
+        <div class="iconBg"><i class="fa-brands fa-html5"></i></div>
+        <div class="iconBg"><i class="fa-brands fa-css3-alt"></i></div>
+        <div class="iconBg"><i class="fa-brands fa-js"></i></div>
+        <div class="iconBg"><i class="fa-brands fa-react"></i></div>
+        <div class="iconBg"><i class="fa-brands fa-angular"></i></div>
+
+        <div class="iconBg"><i class="fa-brands fa-node-js"></i></div>
+      </div>
+    </section>
+
+    <section class="projects" id="Projects">
+      <h3 class="lowOpacity">Browse My Recent</h3>
+      <h2 class="title">Projects</h2>
+      <div class="col-3">
+        <div class="projectBx">
+          <div class="projectImg">
+            <img src="/images/project-1.png" alt="" />
+          </div>
+          <h3 class="name">Project One</h3>
+          <div class="projectsBtn">
+            <button>Github</button>
+            <button>Live Demo</button>
+          </div>
+        </div>
+        <div class="projectBx">
+          <div class="projectImg">
+            <img src="/images/project-2.png" alt="" />
+          </div>
+          <h3 class="name">Project Two</h3>
+          <div class="projectsBtn">
+            <button>Github</button>
+            <button>Live Demo</button>
+          </div>
+        </div>
+        <div class="projectBx">
+          <div class="projectImg">
+            <img src="/images/project-3.png" alt="" />
+          </div>
+          <h3 class="name">Project Three</h3>
+          <div class="projectsBtn">
+            <button>Github</button>
+            <button>Live Demo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
