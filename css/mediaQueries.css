@@ -9,6 +9,9 @@
   .mobile {
     display: block;
   }
+  body {
+    background-color: red;
+  }
 }
 
 @media screen and (max-width: 465px) {
